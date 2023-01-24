@@ -1,6 +1,7 @@
 import React from "react";
 import "./App.css";
 import Navigation from "./Components/Navigation/Navigation";
+import PartOfSpeech from "./Components/PartOfSpeech/PartOfSpeech";
 import Search from "./Components/Search/Search";
 import Word from "./Components/Word/Word";
 
@@ -25,6 +26,8 @@ function App() {
         <Navigation />
         <Search />
         <Word />
+        <PartOfSpeech part={'noun'} />
+        <PartOfSpeech part={'verb'} />
       </UserContext.Provider>
     </div>
   );
