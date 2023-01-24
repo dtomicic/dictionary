@@ -1,0 +1,50 @@
+.container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+
+.wordText {
+    font-size: 38px;
+    margin: 0;
+}
+
+.pronanunciation {
+    color: #b641ff;
+}
+
+.playBtn {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: #e9d0fa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.playIcon {
+    color: #a846f3;
+    font-size: 24px;
+}
+
+@media screen and (min-width: 1440px) {
+    .wordText {
+        font-size: 64px;
+    }
+
+    .pronanunciation {
+        font-size: 28px;
+    }
+
+    .playBtn {
+        height: 80px;
+        width: 80px;;
+    }
+
+    .playIcon {
+        font-size: 36px;
+    }
+}
