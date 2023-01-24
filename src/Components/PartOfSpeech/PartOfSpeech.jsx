@@ -11,24 +11,65 @@ const PartOfSpeech = (props) => {
       <div className={styles.body}>
         <h3 className={styles.bodyHeader}>Meaning</h3>
         <ul className={styles.bodyList}>
-          <li className={styles.bodyListItem}>
-            (etc.) A set of keys used to operate a typewriter, computer, etc.
-          </li>
-          <li className={styles.bodyListItem}>
-            A component of many instruments including the piano, organ, and
-            harpsichord consisting of usually black and white keys that cause
-            different tones to be produced when struck.
-          </li>
-          <li className={styles.bodyListItem}>
-            A device with keys of a musical keyboard, used to control electronic
-            sound-producing devices which may be built into or separate from the
-            keyboard device.
-          </li>
+          {props.data.length > 0 && (
+            <>
+              {props.part === "noun" ? (
+                <>
+                  {props.data[0].meanings[0].definitions.map((item) => {
+                    return (
+                      <li className={styles.bodyListItem}>{item.definition}</li>
+                    );
+                  })}
+                </>
+              ) : (
+                <>
+                  {props.data[0].meanings[1].definitions.map((item) => {
+                    return (
+                      <li className={styles.bodyListItem}>{item.definition}</li>
+                    );
+                  })}
+                </>
+              )}
+            </>
+          )}
         </ul>
         <div className={styles.bodySynonyms}>
           <h3 className={styles.bodyHeader}>Synonyms</h3>
           <ul className={styles.bodySynonymsList}>
-            <li className={styles.bodySynonymsListItem}>electronic keyboard</li>
+            {props.data.length > 0 && (
+              <>
+                {props.part === "noun" ? (
+                  <>
+                    {props.data[0].meanings[0].synonyms && (
+                      <>
+                        {props.data[0].meanings[0].synonyms.map((item) => {
+                          return (
+                            <li className={styles.bodySynonymsListItem}>
+                              {item}
+                            </li>
+                          );
+                        })}
+                      </>
+                    )}
+                  </>
+                ) : (
+                  <>
+                    {props.data[0].meanings[1].synonyms && (
+                      <>
+                        {props.data[0].meanings[1].synonyms.map((item) => {
+                          return (
+                            <li className={styles.bodySynonymsListItem}>
+                              {item}
+                            </li>
+                          );
+                        })}
+                      </>
+                    )}
+                  </>
+                )}
+              </>
+            )}
+            {/* <li className={styles.bodySynonymsListItem}>electronic keyboard</li> */}
           </ul>
         </div>
       </div>

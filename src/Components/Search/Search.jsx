@@ -4,7 +4,7 @@ import { SlMagnifier } from "react-icons/sl";
 import { UserContext } from "../../App";
 import classnames from "classnames";
 
-const Search = () => {
+const Search = (props) => {
   const { font } = React.useContext(UserContext);
   return (
     <div className={styles.container}>
@@ -16,8 +16,9 @@ const Search = () => {
           [styles.fontMono]: font === "Monospace",
         })}
         placeholder="Search"
+        onChange={props.handleSearch}
       />
-      <SlMagnifier className={styles.icon} />
+      <SlMagnifier className={styles.icon} onClick={props.handleClick} />
     </div>
   );
 };

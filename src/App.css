@@ -2,6 +2,14 @@
     padding: 20px 20px 0 20px;
 }
 
+.app--light {
+    color: black
+}
+
+.app--dark {
+    color: white;
+}
+
 .font-serif {
     font-family: 'Roboto Slab', serif;
 }
@@ -12,6 +20,18 @@
 
 .font-mono {
     font-family: 'Roboto Mono', monospace;
+}
+
+.noData {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.noDataHeader {
+    font-size: 20px;
 }
 
 @media screen and (min-width: 768px) {
