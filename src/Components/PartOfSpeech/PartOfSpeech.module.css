@@ -1,0 +1,80 @@
+.container {
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+}
+
+.headerText {
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.line {
+  width: 80%;
+  opacity: 0.4;
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  margin-top: 25px;
+}
+
+.bodyHeader {
+  font-weight: 400;
+  font-size: 16px;
+  opacity: 0.5;
+  margin: 0;
+}
+
+.bodyList {
+  padding-left: 20px;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.bodyList li::before {
+  content: "\2022";
+  color: #8358a7;
+  font-weight: 700;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+.bodyListItem {
+  font-size: 16px;
+  font-weight: 400;
+  opacity: 0.8;
+}
+
+.bodySynonyms {
+    display: flex;
+    align-items: flex-start;
+    gap: 25px;
+    margin-top: 20px;
+}
+
+.bodySynonymsList {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.bodySynonymsListItem {
+    color: #8353b2;
+    font-weight: 600;
+}
+
