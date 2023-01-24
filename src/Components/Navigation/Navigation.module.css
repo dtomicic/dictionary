@@ -1,0 +1,118 @@
+.container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+  color: gray;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  gap: 15px;
+}
+
+.fontPicker {
+  display: flex;
+  align-items: center;
+}
+
+.fontPickerTextContainer {
+  display: flex;
+  align-items: center;
+}
+
+.fontPickerTextContainer:hover {
+  cursor: pointer;
+}
+
+.fontPickerText {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.iconDropdown {
+  height: 40px;
+  width: 30px;
+  color: #8358a7;
+  transition: ease-in-out 0.1s;
+}
+
+.fontDropdown {
+  display: flex;
+  visibility: hidden;
+  flex-direction: column;
+  background-color: white;
+  position: absolute;
+  border-radius: 10px;
+  top: 60px;
+  right: 65px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+  padding: 10px 20px;
+  z-index: 999999;
+  transition: ease-in-out 0.1s;
+}
+
+.fontList {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.fontListItem:hover {
+  cursor: pointer;
+}
+
+.divider {
+  height: 25px;
+  margin: 0;
+  opacity: 0.3;
+}
+
+.iconTheme {
+  font-size: 18px;
+  color: gray;
+}
+
+.iconTheme:hover {
+  cursor: pointer;
+}
+
+.fontDropdownActive {
+  visibility: visible;
+}
+
+.iconDropdownRotate {
+  transform: rotate(180deg);
+}
+
+@media screen and (min-width: 768px) {
+  .fontPickerText {
+    font-size: 18px;
+  }
+
+  .fontDropdown {
+    top: 85px;
+    right: 85px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .fontPickerText {
+    font-size: 22px;
+  }
+
+  .fontDropdown {
+    top: 115px;
+    right: 395px;
+  }
+}

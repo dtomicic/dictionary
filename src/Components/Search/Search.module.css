@@ -1,0 +1,60 @@
+.container {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  margin-top: 20px;
+  position: relative;
+}
+
+.input {
+  width: 100%;
+  border: none;
+  background-color: #f4f4f4;
+  padding: 15px 25px;
+  border-radius: 15px;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.input:focus {
+  outline: none;
+}
+
+.input::placeholder {
+  opacity: 0.5;
+}
+
+.icon {
+  position: absolute;
+  right: 25px;
+  color: #8358a7;
+  stroke-width: 35px;
+}
+
+.icon:hover {
+    cursor: pointer;
+}
+
+.fontSerif {
+  font-family: "Roboto Slab", serif;
+}
+
+.fontSserif {
+  font-family: "Roboto", sans-serif;
+}
+
+.fontMono {
+  font-family: "Roboto Mono", monospace;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    margin-top: 40px;
+  }
+}
+
+@media screen and (min-width: 1440px){
+    .input {
+        padding: 20px 25px;
+    }
+}
