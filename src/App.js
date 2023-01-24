@@ -2,6 +2,7 @@ import React from "react";
 import "./App.css";
 import Navigation from "./Components/Navigation/Navigation";
 import Search from "./Components/Search/Search";
+import Word from "./Components/Word/Word";
 
 export const UserContext = React.createContext();
 
@@ -23,6 +24,7 @@ function App() {
       <UserContext.Provider value={{ theme, setTheme, font, setFont }}>
         <Navigation />
         <Search />
+        <Word />
       </UserContext.Provider>
     </div>
   );

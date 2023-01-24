@@ -18,6 +18,10 @@ const Navigation = () => {
     }
   };
 
+  const dropdownToggle = () => {
+    setActive(!active);
+  };
+
   return (
     <div className={styles.container}>
       <div className={styles.logo}>
@@ -27,6 +31,7 @@ const Navigation = () => {
         <div className={styles.fontPicker}>
           <div
             className={styles.fontPickerTextContainer}
+            onTouchStart={dropdownToggle}
             onMouseOver={() => setActive(true)}
             onMouseLeave={() => setActive(false)}
           >
