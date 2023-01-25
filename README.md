@@ -1,70 +1,33 @@
-# Getting Started with Create React App
+<h1 align="center">
+  Dictionary
+  <br>
+  (Frontend Mentor Project)
+</h1>
+<br>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Table of contents
+- [Project task](#project-task)
+- [Project overview](#project-overview)
+- [Time spent on the project](#time-spent-on-the-project)
+- [Built with](#built-with)
+- [Live preview](#live-preview)
 
-In the project directory, you can run:
 
-### `npm start`
+## Project task
+The task was to develop a website where users can search for a word and get a dictionary meaning of the word they searched for (through Dictionary API). Also the users should be able to swith from light to dark theme and change the typography of the font (serif, sans-serif or monospace). Users should be able to listen to the pronunciation of the word by clicking on the play button (this functionality hasn't been developed, TBA).
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Project overview
+Had some fun with the nicely done design and came across the user managed font change for the first time so also had fun with that. Rest of the project wasn't that demanding a simple call to the API after a click on the search button and displaying of the information from the response. As I mentioned pronunciation is still to be implemented,
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Time spent on the project
+[![wakatime](https://wakatime.com/badge/user/221cdb16-58a4-49ad-833d-8f3db44055f4/project/57063b3e-524f-4446-b359-24584fc18304.svg)](https://wakatime.com/badge/user/221cdb16-58a4-49ad-833d-8f3db44055f4/project/57063b3e-524f-4446-b359-24584fc18304)
 
-### `npm test`
+## Built with
+- HTML
+- CSS
+- React
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Live preview
+[Click for live preview](https://dictionary-6g9n16hr6-dtomicic.vercel.app/)
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
